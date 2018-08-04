@@ -1,15 +1,28 @@
----
-title: Le Wagon - Middleman
----
-
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<div class="index-wrapper">
+  <div class="index-wrapper-clouds">
+    <div class="cloud-1">
+      <%= image_tag "cloud-small.png", alt: "cloud"%>
+    </div>
+    <div class="cloud-2">
+      <%= image_tag "cloud-large.png", alt: "cloud"%>
+    </div>
+    <div class="cloud-3">
+      <%= image_tag "cloud-small.png", alt: "cloud"%>
+    </div>
+    <div class="cloud-4">
+      <%= image_tag "cloud-medium.png", alt: "cloud"%>
+    </div>
+  </div>
+  <div class="index-wrapper-flex-box">
+    <div class="index-wrapper-flex-box-title">
+      <h1>Alex Smith</h1>
+      <p>--- Developer ---</p>
+    </div>
+    <div class="index-wrapper-mountains" style= "text-align:center;">
+      <%= image_tag "mountain.png", alt: "Mountains" %>
+      <div class="index-wrapper-mountain-climber">
+        <%= image_tag "mountainClimber.png", alt: "Mountain Climber" %>
+      </div>
+    </div>
   </div>
 </div>
