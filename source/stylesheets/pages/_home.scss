@@ -1,5 +1,6 @@
 .index-wrapper {
-  background: linear-gradient(180deg, rgba(116, 202, 233, 0.8) 31.49%, rgba(128, 206, 235, 0.33) 99.99%, #FFFFFF 100%), #FFFFFF;
+  background-image: url(../images/mountains.svg);
+  background-size: cover;
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -13,21 +14,24 @@
 
 .index-wrapper-flex-box-title {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
+  height: 50%;
+  width: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  display: block;
+  text-align: center;
   h1 {
     font-family: 'Shadows Into Light';
-    font-size: 144px;
+    font-size: 11vw;
     color: white;
-    text-shadow: 1px 1px 3px white;
+    text-shadow: 1px 1px 3px #91D5EE;
   } p {
     text-align: center;
     font-family: 'Comfortaa', cursive;
-    font-size: 50px;
+    font-size: 3vw;
     color: white;
-    margin-top: 5vh;
   }
 }
 
@@ -52,25 +56,162 @@ left: 16%;
   width: 100vw;
 }
 
+
+@keyframes cloud-1 {
+    0%  {bottom: 20%; left: 0%;}
+    50% {bottom: 22%; left: 50%;}
+    100%{bottom: 21%; left: 100%;}
+}
+
 .cloud-1 {
   position: absolute;
-  bottom: 0;
+  height: 17vh;
+  width: 17vw;
+  bottom: 20%;
+  left: 0%;
+  animation-name: cloud-1;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-2 {
+    0% {top: -5% ; left: 20%;}
+    50%{top: -7% ; left: 40%;}
+    100%{top: -6% ; left: 60%;}
 }
 
 .cloud-2 {
   position: absolute;
+  height: 25vh;
+  width: 30vw;
   top: 2%;
   left: 20%;
+  animation-name: cloud-2;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-3 {
+    0% {top: 10%; left: 70%;}
+    50% {top: 12%; left: 100%;}
+    100%{top: 11%; left: 105%;}
 }
 
 .cloud-3 {
   position: absolute;
+  height: 21vh;
+  width: 21vw;
   top: 10%;
   left: 70%;
+  animation-name: cloud-3;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-4 {
+    0%  {bottom: -25px; right: 0%;}
+    50% {bottom: -25px; right: -20%;}
+    100% {bottom: -23px; right: -40%;}
 }
 
 .cloud-4 {
   position: absolute;
+  height: 15vh;
+  width: 20vw;
   bottom: -25%;
   right: 0%;
+  animation-name: cloud-4;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-5 {
+    0% {top: 11%; left: -40%;}
+    50% {top: 11%; left: 0%;}
+    100%{top: 12%; left: 40%;}
+}
+
+.cloud-5 {
+  position: absolute;
+  height: 15vh;
+  width: 20vw;
+  top: 11%;
+  right: 0%;
+  animation-name: cloud-5;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-6 {
+    0% {bottom: -23%; left: -20%;}
+    50% {bottom: -23%; left: 0%;}
+    100%{bottom: -23%; left: 20%;}
+}
+
+.cloud-6 {
+  position: absolute;
+  height: 20vh;
+  width: 25vw;
+  bottom: -23%;
+  left: -10%;
+  animation-name: cloud-6;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.experience-wrapper {
+  padding: 5%;
+  background-color: #BFE7F5;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+
+}
+
+.experience-wrapper-title {
+  height: 20%;
+  text-align: center;
+  h4 {
+    margin: 0px !important;
+  }
+}
+
+.experience-wrapper-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.experience-wrapper-content-strategy {
+  h4 {
+    text-align: center;
+  }
+
+}
+
+.experience-wrapper-content-development {
+
+    h4 {
+    text-align: center;
+  }
+
+}
+
+.experience-wrapper-content-design {
+    h4 {
+    text-align: center;
+  }
+
 }

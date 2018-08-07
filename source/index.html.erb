@@ -1,28 +1,46 @@
 <div class="index-wrapper">
   <div class="index-wrapper-clouds">
-    <div class="cloud-1">
-      <%= image_tag "cloud-small.png", alt: "cloud"%>
-    </div>
-    <div class="cloud-2">
-      <%= image_tag "cloud-large.png", alt: "cloud"%>
-    </div>
-    <div class="cloud-3">
-      <%= image_tag "cloud-small.png", alt: "cloud"%>
-    </div>
-    <div class="cloud-4">
-      <%= image_tag "cloud-medium.png", alt: "cloud"%>
-    </div>
+    <%= image_tag "cloud-1.svg", alt: "cloud", :class => "cloud-1"%>
+    <%= image_tag "cloud-3.svg", alt: "cloud", :class => "cloud-2"%>
+    <%= image_tag "cloud-2.svg", alt: "cloud", :class => "cloud-3"%>
+    <%= image_tag "cloud-3.svg", alt: "cloud", :class => "cloud-4"%>
+    <%= image_tag "cloud-3.svg", alt: "cloud", :class => "cloud-5"%>
+    <%= image_tag "cloud-2.svg", alt: "cloud", :class => "cloud-6"%>
   </div>
   <div class="index-wrapper-flex-box">
     <div class="index-wrapper-flex-box-title">
       <h1>Alex Smith</h1>
-      <p>--- Developer ---</p>
+      <p class="typed">Developer</p>
     </div>
-    <div class="index-wrapper-mountains" style= "text-align:center;">
-      <%= image_tag "mountain.png", alt: "Mountains" %>
-      <div class="index-wrapper-mountain-climber">
-        <%= image_tag "mountainClimber.png", alt: "Mountain Climber" %>
-      </div>
+  </div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="typed.js"></script>
+<script type="text/javascript">
+  var options = {
+    strings: ["Developer", "Designer", "Strategist"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+    backDelay: 2000,
+    showCursor: false
+  }
+  var typed = new Typed(".typed", options);
+</script>
+<div class="experience-wrapper">
+  <div class="experience-wrapper-title">
+    <h4>How can I help?</h4>
+  </div>
+  <div class="experience-wrapper-content">
+    <div class="experience-wrapper-content-strategy">
+      <h4>Strategy</h4>
+    </div>
+    <div class="experience-wrapper-content-design">
+      <h4>Design</h4>
+    </div>
+    <div class="experience-wrapper-content-development">
+      <h4>Development</h4>
     </div>
   </div>
 </div>
