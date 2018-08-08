@@ -63,17 +63,21 @@ left: 16%;
     100%{bottom: 21%; left: 100%;}
 }
 
-.cloud-1 {
+.cloud-1, .cloud-2, .cloud-3, .cloud-4, .cloud-5, .cloud-6 {
   position: absolute;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-1 {
   height: 17vh;
   width: 17vw;
   bottom: 20%;
   left: 0%;
   animation-name: cloud-1;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+
 }
 
 @keyframes cloud-2 {
@@ -83,16 +87,11 @@ left: 16%;
 }
 
 .cloud-2 {
-  position: absolute;
   height: 25vh;
   width: 30vw;
   top: 2%;
   left: 20%;
   animation-name: cloud-2;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }
 
 @keyframes cloud-3 {
@@ -102,16 +101,11 @@ left: 16%;
 }
 
 .cloud-3 {
-  position: absolute;
   height: 21vh;
   width: 21vw;
   top: 10%;
   left: 70%;
   animation-name: cloud-3;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }
 
 @keyframes cloud-4 {
@@ -121,16 +115,11 @@ left: 16%;
 }
 
 .cloud-4 {
-  position: absolute;
   height: 15vh;
   width: 20vw;
   bottom: -25%;
   right: 0%;
   animation-name: cloud-4;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }
 
 @keyframes cloud-5 {
@@ -140,16 +129,11 @@ left: 16%;
 }
 
 .cloud-5 {
-  position: absolute;
   height: 15vh;
   width: 20vw;
   top: 11%;
   right: 0%;
   animation-name: cloud-5;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }
 
 @keyframes cloud-6 {
@@ -159,26 +143,20 @@ left: 16%;
 }
 
 .cloud-6 {
-  position: absolute;
   height: 20vh;
   width: 25vw;
   bottom: -23%;
   left: -10%;
   animation-name: cloud-6;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }
 
 .experience-wrapper {
   padding: 5%;
-  background-color: #BFE7F5;
+  background-color: #6CC7BE;
   height: 100vh;
   width: 100vw;
   position: relative;
   text-align: center;
-
 }
 
 .experience-wrapper-title {
@@ -186,32 +164,61 @@ left: 16%;
   text-align: center;
   h4 {
     margin: 0px !important;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-shadow: 1px 1px 3px #6CC7BE;
+    font-size: 3vw;
   }
 }
 
 .experience-wrapper-content {
   display: flex;
   justify-content: space-around;
-}
-
-.experience-wrapper-content-strategy {
   h4 {
     text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: #6CC7BE;
+    font-size: 2.5vw;
+    margin-bottom: 15%;
   }
-
+  p {
+    text-align: left;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5vw;
+  }
 }
 
-.experience-wrapper-content-development {
-
-    h4 {
-    text-align: center;
-  }
-
+.experience-wrapper-content-strategy, .experience-wrapper-content-development, .experience-wrapper-content-design {
+  width: 30%;
+  background-color: rgb(260,260,260);
+  text-align: center;
+  padding: 2%;
+  border-radius: 5px;
 }
 
-.experience-wrapper-content-design {
-    h4 {
-    text-align: center;
-  }
-
+.strategy-icon, .design-icon, .development-icon {
+  width: 10vw;
+  height: auto;
 }
+
+.get-in-touch-wrapper {
+  padding: 5%;
+  background-color: #d7917d;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+}
+
+.get-in-touch-wrapper-title {
+  height: 20%;
+  text-align: center;
+  h4 {
+    margin: 0px !important;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-shadow: 1px 1px 3px #d7917d;
+    font-size: 3vw;
+  }
+}
+
