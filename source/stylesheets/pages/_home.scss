@@ -1,9 +1,10 @@
 .index-wrapper {
   background-image: url(../images/mountains.svg);
   background-size: cover;
-  height: 100vh;
+  min-height: 102vh;
   width: 100vw;
   position: relative;
+  z-index: 1;
 }
 
 .index-wrapper-flex-box {
@@ -32,6 +33,7 @@
     font-family: 'Comfortaa', cursive;
     font-size: 3vw;
     color: white;
+    text-shadow: rgba(0,0,0,0.5);
   }
 }
 
@@ -153,20 +155,20 @@ left: 16%;
 .experience-wrapper {
   padding: 5%;
   background-color: #6CC7BE;
-  height: 100vh;
+  min-height: 120vh;
   width: 100vw;
   position: relative;
   text-align: center;
 }
 
 .experience-wrapper-title {
-  height: 20%;
+  height: 15vh;
   text-align: center;
   h4 {
     margin: 0px !important;
     font-family: 'Comfortaa', cursive;
     color: white;
-    text-shadow: 1px 1px 3px #6CC7BE;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     font-size: 3vw;
   }
 }
@@ -203,22 +205,39 @@ left: 16%;
 
 .get-in-touch-wrapper {
   padding: 5%;
-  background-color: #d7917d;
-  height: 100vh;
+  background-color: #52C6F1;
+  min-height: 120vh;
   width: 100vw;
   position: relative;
   text-align: center;
 }
 
 .get-in-touch-wrapper-title {
-  height: 20%;
+  height: 15vh;
   text-align: center;
   h4 {
     margin: 0px !important;
     font-family: 'Comfortaa', cursive;
     color: white;
-    text-shadow: 1px 1px 3px #d7917d;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     font-size: 3vw;
   }
+}
+
+.wechat-icon {
+  height: 30vh;
+}
+
+.get-in-touch-wrapper-content {
+  p {
+    color: white;
+    margin: 10vh;
+  }
+}
+
+.experience-wrapper-content-icons {
+  display: flex;
+  justify-content: space-around;
+  height: 20vh;
 }
 
