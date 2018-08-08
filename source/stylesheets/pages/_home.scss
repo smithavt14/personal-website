@@ -155,7 +155,7 @@ left: 16%;
 .experience-wrapper {
   padding: 5%;
   background-color: #6CC7BE;
-  min-height: 120vh;
+  height: 120vh;
   width: 100vw;
   position: relative;
   text-align: center;
@@ -175,7 +175,8 @@ left: 16%;
 
 .experience-wrapper-content {
   display: flex;
-  justify-content: space-around;
+  height: 75vh;
+  justify-content: space-between;
   h4 {
     text-align: center;
     font-family: 'Comfortaa', cursive;
@@ -191,11 +192,14 @@ left: 16%;
 }
 
 .experience-wrapper-content-strategy, .experience-wrapper-content-development, .experience-wrapper-content-design {
-  width: 30%;
   background-color: rgb(260,260,260);
   text-align: center;
-  padding: 2%;
+  padding: 3vw;
   border-radius: 5px;
+  min-height: 60vh;
+  margin: 1vw;
+  width: 30vw;
+
 }
 
 .strategy-icon, .design-icon, .development-icon {
@@ -232,6 +236,7 @@ left: 16%;
   p {
     color: white;
     margin: 10vh;
+    font-size: 1.5vw;
   }
 }
 
