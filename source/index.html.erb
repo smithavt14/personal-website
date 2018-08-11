@@ -38,6 +38,8 @@
       <h4>Strategy</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dicta esse ratione tenetur veniam rem rerum quos tempore qui sunt aut reiciendis saepe adipisci, placeat mollitia voluptatum sint deleniti temporibus.</p>
     </div>
+    <div class="experience-wrapper-content-strategy-shadow">
+    </div>
     <div class="experience-wrapper-content-design">
       <%= image_tag "design-icon.svg", alt: "alttext", :class => "design-icon" %>
       <h4>Design</h4>
@@ -60,9 +62,18 @@
   <div class="get-in-touch-wrapper-content">
     <p>I'm always interested in talking about interesting projects. If you'd like to get in touch, scan the QR code for WeChat. If you're not in China, you can contact me through linkedin, email, or instagram.</p>
     <div class="experience-wrapper-content-icons">
-      <%= image_tag "linkedin.svg", alt: "linkedin", :class => "linkedin-icon" %>
-      <%= image_tag "mail.svg", alt: "email", :class => "email-icon" %>
-      <%= image_tag "instagram.svg", alt: "instagram", :class => "instagram-icon" %>
+      <% link_to "https://www.linkedin.com/in/smithavt14" do %>
+        <div>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      <% end %>
+      <% link_to "smithavt14@gmail.com" do %>
+        <div><i class="fas fa-envelope"></i></div>
+      <% end %>
+      <% link_to "https://www.instagram.com/smithavt14" do %>
+        <div><i class="fab fa-instagram"></i></div>
+      <% end %>
     </div>
   </div>
+</div>
 </div>

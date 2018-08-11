@@ -155,7 +155,7 @@ left: 16%;
 .experience-wrapper {
   padding: 5%;
   background-color: #6CC7BE;
-  height: 120vh;
+  height: 105vh;
   width: 100vw;
   position: relative;
   text-align: center;
@@ -187,18 +187,24 @@ left: 16%;
   p {
     text-align: left;
     font-family: 'Comfortaa', cursive;
-    font-size: 1.5vw;
+    font-size: 18px;
   }
 }
 
 .experience-wrapper-content-strategy, .experience-wrapper-content-development, .experience-wrapper-content-design {
   background-color: rgb(260,260,260);
   text-align: center;
-  padding: 3vw;
+  padding: 25px;
   border-radius: 5px;
   min-height: 60vh;
   margin: 1vw;
-  width: 30vw;
+  width: 27vw;
+  box-shadow: -20px 20px 0px #5BA9A2;
+  position: relative
+}
+
+.experience-wrapper-content-strategy-shadow {
+  position: absolute;
 
 }
 
@@ -210,7 +216,7 @@ left: 16%;
 .get-in-touch-wrapper {
   padding: 5%;
   background-color: #52C6F1;
-  min-height: 120vh;
+  min-height: 105vh;
   width: 100vw;
   position: relative;
   text-align: center;
@@ -223,7 +229,6 @@ left: 16%;
     margin: 0px !important;
     font-family: 'Comfortaa', cursive;
     color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     font-size: 3vw;
   }
 }
@@ -244,5 +249,14 @@ left: 16%;
   display: flex;
   justify-content: space-around;
   height: 20vh;
+  font-size: 10vw;
+  color: white;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    font-weight: bolder;
+  }
 }
 
