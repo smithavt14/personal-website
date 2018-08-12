@@ -1,215 +1,84 @@
-.index-wrapper {
+
+.carousel-content-mountains {
   background-image: url(../images/mountains.svg);
-  background-size: cover;
-  min-height: 102vh;
-  width: 100vw;
-  position: relative;
-  z-index: 1;
-}
-
-.index-wrapper-flex-box {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-}
-
-.index-wrapper-flex-box-title {
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 42%;
   position: absolute;
-  top: 45%;
-  left: 50%;
-  height: 50%;
-  width: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  display: block;
+  background-size: cover;
+  bottom: 0%;
+  z-index: 20;
+  width: 100%;
+}
+
+
+.carousel-content-title {
+  position: absolute;
+  top: 22%;
+  z-index: 20;
+  width: 100%;
   text-align: center;
+  display: block;
+  color: white;
   h1 {
     font-family: 'Shadows Into Light';
-    font-size: 11vw;
-    color: white;
-    text-shadow: 1px 1px 3px #91D5EE;
+    font-size: 10vw;
   } p {
     text-align: center;
     font-family: 'Comfortaa', cursive;
-    font-size: 3vw;
-    color: white;
-    text-shadow: rgba(0,0,0,0.5);
+    font-size: 4vw;
   }
-}
-
-.index-wrapper-mountains {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  left: 53%;
-  transform: translate(-50%);
-}
-
-.index-wrapper-mountain-climber {
-position: absolute;
-bottom: 70%;
-left: 16%;
-}
-
-.index-wrapper-clouds {
-  position: absolute;
-  top: 0;
-  height: 40vh;
-  width: 100vw;
-}
-
-
-@keyframes cloud-1 {
-    0%  {bottom: 20%; left: 0%;}
-    50% {bottom: 22%; left: 50%;}
-    100%{bottom: 21%; left: 100%;}
-}
-
-.cloud-1, .cloud-2, .cloud-3, .cloud-4, .cloud-5, .cloud-6 {
-  position: absolute;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.cloud-1 {
-  height: 17vh;
-  width: 17vw;
-  bottom: 20%;
-  left: 0%;
-  animation-name: cloud-1;
-
-}
-
-@keyframes cloud-2 {
-    0% {top: -5% ; left: 20%;}
-    50%{top: -7% ; left: 40%;}
-    100%{top: -6% ; left: 60%;}
-}
-
-.cloud-2 {
-  height: 25vh;
-  width: 30vw;
-  top: 2%;
-  left: 20%;
-  animation-name: cloud-2;
-}
-
-@keyframes cloud-3 {
-    0% {top: 10%; left: 70%;}
-    50% {top: 12%; left: 100%;}
-    100%{top: 11%; left: 105%;}
-}
-
-.cloud-3 {
-  height: 21vh;
-  width: 21vw;
-  top: 10%;
-  left: 70%;
-  animation-name: cloud-3;
-}
-
-@keyframes cloud-4 {
-    0%  {bottom: -25px; right: 0%;}
-    50% {bottom: -25px; right: -20%;}
-    100% {bottom: -23px; right: -40%;}
-}
-
-.cloud-4 {
-  height: 15vh;
-  width: 20vw;
-  bottom: -25%;
-  right: 0%;
-  animation-name: cloud-4;
-}
-
-@keyframes cloud-5 {
-    0% {top: 11%; left: -40%;}
-    50% {top: 11%; left: 0%;}
-    100%{top: 12%; left: 40%;}
-}
-
-.cloud-5 {
-  height: 15vh;
-  width: 20vw;
-  top: 11%;
-  right: 0%;
-  animation-name: cloud-5;
-}
-
-@keyframes cloud-6 {
-    0% {bottom: -23%; left: -20%;}
-    50% {bottom: -23%; left: 0%;}
-    100%{bottom: -23%; left: 20%;}
-}
-
-.cloud-6 {
-  height: 20vh;
-  width: 25vw;
-  bottom: -23%;
-  left: -10%;
-  animation-name: cloud-6;
 }
 
 .experience-wrapper {
   padding: 5%;
   background-color: #6CC7BE;
-  height: 105vh;
+  min-height: 105vh;
   width: 100vw;
   position: relative;
-  text-align: center;
-}
-
-.experience-wrapper-title {
-  height: 15vh;
   text-align: center;
   h4 {
     margin: 0px !important;
     font-family: 'Comfortaa', cursive;
     color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-    font-size: 3vw;
+    font-size: 4vw;
+    margin-bottom: 5% !important;
   }
 }
 
 .experience-wrapper-content {
   display: flex;
-  height: 75vh;
+  min-height: 75vh;
+  overflow: hidden;
   justify-content: space-between;
+  padding: 1%;
   h4 {
     text-align: center;
     font-family: 'Comfortaa', cursive;
     color: #6CC7BE;
-    font-size: 2.5vw;
-    margin-bottom: 15%;
+    font-size: 160%;
+    margin: 10% !important;
   }
   p {
     text-align: left;
     font-family: 'Comfortaa', cursive;
-    font-size: 18px;
+    font-size: 80%;
   }
 }
 
 .experience-wrapper-content-strategy, .experience-wrapper-content-development, .experience-wrapper-content-design {
   background-color: rgb(260,260,260);
-  text-align: center;
   padding: 25px;
   border-radius: 5px;
-  min-height: 60vh;
-  margin: 1vw;
-  width: 27vw;
-  box-shadow: -20px 20px 0px #5BA9A2;
-  position: relative
-}
-
-.experience-wrapper-content-strategy-shadow {
-  position: absolute;
-
+  margin: 5% 0%;
+  height: 425px;
+  :hover {
+    box-shadow: none;
+  }
 }
 
 .strategy-icon, .design-icon, .development-icon {
-  width: 10vw;
+  width: 40%;
   height: auto;
 }
 
@@ -220,29 +89,23 @@ left: 16%;
   width: 100vw;
   position: relative;
   text-align: center;
-}
-
-.get-in-touch-wrapper-title {
-  height: 15vh;
-  text-align: center;
   h4 {
     margin: 0px !important;
     font-family: 'Comfortaa', cursive;
     color: white;
-    font-size: 3vw;
+    font-size: 4vw;
+    margin-bottom: 5% !important;
+  }
+  p {
+    color: white;
+    margin: 7%;
+    font-size: 100%;
   }
 }
 
 .wechat-icon {
-  height: 30vh;
-}
-
-.get-in-touch-wrapper-content {
-  p {
-    color: white;
-    margin: 10vh;
-    font-size: 1.5vw;
-  }
+  height: 30vw;
+  margin: 5%;
 }
 
 .experience-wrapper-content-icons {
@@ -256,7 +119,9 @@ left: 16%;
     color: white;
   }
   a:hover {
-    font-weight: bolder;
+    margin-top: -2%;
+    transition: 0.25s;
+    transition-timing-function: ease-out;
   }
 }
 
